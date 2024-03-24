@@ -1,9 +1,12 @@
 import datatype from '../assets/images/js.png'
 import es from '../assets/images/es.png'
 import fundamental from '../assets/images/fundumentaljs.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 function Blogs() {
     return (
-      <section className="w-[85%] mx-auto text-gray-400 text-center py-[60px]">
+      <section className="w-[85%] mx-auto text-gray-400 text-center py-[60px]" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300" data-aos-duration="500">
         {/* heading */}
         <div className="title flex items-center justify-center py-[30px] my-5">
           <span className="w-24 h-[1px] bg-gray-400"></span>
@@ -11,7 +14,7 @@ function Blogs() {
           <span className="w-24 h-[1px] bg-gray-400"></span>
         </div>
   
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-5 justify-items-around">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-5 justify-items-center align-items-center">
           <div className="max-w-xs rounded-md shadow-md bg-gray-900 text-gray-100">
             <img src={datatype} alt="" className="w-full rounded-t-md h-72 sm:h-60 md:h-72 lg:h-80 dark:bg-gray-500" />
             <div className="flex flex-col justify-between p-6 space-y-8">

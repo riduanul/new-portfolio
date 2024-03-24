@@ -1,8 +1,11 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 import me from '../assets/images/Photo.png'
 function AboutMe() {
   return (
-   <div className='w-[85%] mx-auto my-[100px] z-20 '>
+   <div id='about' className='w-[85%] mx-auto my-[100px] z-20  '  data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300"
+   data-aos-duration="700">
   <div className="title flex items-center justify-center ">
         <span className="w-24 h-[1px] bg-gray-400"></span>
         <span className='text-2xl font-bold text-center text-green-600 my-5 border-gray-400 border p-2  rounded'>About <span className='text-white'>Me</span></span>

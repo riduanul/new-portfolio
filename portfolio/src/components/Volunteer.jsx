@@ -1,7 +1,9 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 function Volunteer() {
   return (
-    <section className='max-w-[70%] mx-auto mt-[100px] mb-[40px] text-gray-400 '>
+    <section className='max-w-[70%] mx-auto mt-[100px] mb-[40px] text-gray-400 ' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300" data-aos-duration="500">
          {/* heading */}
          <div className="title flex items-center justify-center">
           <span className="w-24 h-[1px] bg-gray-400"></span>

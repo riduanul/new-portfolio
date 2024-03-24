@@ -3,7 +3,9 @@ import { faGithub, faLinode } from '@fortawesome/free-brands-svg-icons';
 import ticketBooking from '../assets/images/ticketBooking.png';
 import doctor from '../assets/images/doctors.png';
 import hotel from '../assets/images/hotel.png';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 function Project() {
   const projects = [
     {
@@ -33,7 +35,7 @@ function Project() {
   ];
 
   return (
-    <div className='w-full md:w-[85%] mx-auto'>
+    <div className='w-full md:w-[85%] mx-auto'id='project'>
       <div className="heading text-white my-[80px]">
         {/* heading */}
         <div className="title flex items-center justify-center">
@@ -44,11 +46,12 @@ function Project() {
       </div>
 
       {projects.map((project, index) => (
-        <div className={`my-[80px] flex flex-col md:flex-row items-center justify-between gap-5 ${index % 2 != 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`} key={index}>
-          <div className="flex flex-col p-4 text-white w-full md:w-[50%]">
+        <div data-aos={`${index%2 !== 0 ? 'fade-left' : 'fade-right'}`} data-aos-offset="300"
+        data-aos-duration="700" className= {`my-[80px] flex flex-col md:flex-row items-center justify-between gap-5 ${index % 2 != 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`} key={index}>
+          <div className="flex flex-col p-4 text-white w-full md:w-[60%]">
             <h2 className="text-2xl font-bold mb-2">{project.name}</h2>
             <p className="mb-4 text-gray-400 text-justify">{project.description}</p>
-            <div className='flex items-center space-x-2'>
+            <div className='flex flex-wrap items-center space-x-1 md:space-x-2'>
               <p className='font-bold text-lg'>Technologies: </p>{project.technologies.map((tech, index) => (
                 <button key={index} className='btn btn-sm border p-1 rounded-md bg-gray-700'>{tech}</button>
               ))}

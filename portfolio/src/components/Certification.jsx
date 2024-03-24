@@ -1,9 +1,13 @@
 import web from '../assets/images/web.jfif'
 import redux from '../assets/images/redux.jfif'
 import python from '../assets/images/python.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 function Certification() {
   return (
-    <section className='max-w-[85%] mx-auto'>
+    <section className='max-w-[85%] mx-auto' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300"
+    data-aos-duration="700">
          {/* heading */}
         <div className="title flex items-center justify-center py-[30px] my-5">
           <span className="w-24 h-[1px] bg-gray-400"></span>

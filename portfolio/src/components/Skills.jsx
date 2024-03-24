@@ -1,3 +1,6 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 import '../css/Hero.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faJs, faPython} from '@fortawesome/free-brands-svg-icons';
@@ -13,9 +16,10 @@ import mongodb from '../assets/images/mdb.png'
 function Skills() {
 
   return (
-<>
+<div  data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300"
+   data-aos-duration="500">
 
-<div className="title flex items-center justify-center">
+<div className="title flex items-center justify-center" >
   <span className="w-24 h-[1px] bg-gray-400"></span>
     <span className='text-2xl font-bold text-center text-white my-5 border-gray-400 border p-2  rounded '>My <span className='text-green-600'>Skills</span></span>
     <span className="w-24 h-[1px] bg-gray-400"></span>
@@ -223,7 +227,7 @@ function Skills() {
 
   
   
-    </>
+    </div>
   )
 }
 

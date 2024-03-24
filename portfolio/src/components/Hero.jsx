@@ -4,9 +4,12 @@ import myImg from '../assets/images/Riduanul-Haque.jpg'
 import Typewriter from 'typewriter-effect';
 import resume from '../assets/resume.pdf'
 import '../css/Hero.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 function Hero() {
   return (
-    <div className='relative grid grid-cols-1 md:grid-cols-2 text-white max-w-6xl mx-auto justify-around items-center py-[100px] my-5'>
+    <div data-aos="fade-right" data-aos-offset="500"  data-aos-duration="500" className='relative grid grid-cols-1 md:grid-cols-2 text-white max-w-6xl mx-auto justify-around items-center py-[100px] my-5'>
       {/* <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-blue-600 rounded-lg opacity-90"></div> */}
       <div className="title z-20">
         <div className="flex flex-col text-center md:text-left gap-3">
