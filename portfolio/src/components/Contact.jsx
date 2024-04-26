@@ -3,6 +3,7 @@ import 'aos/dist/aos.css';
 AOS.init();
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faLinkedin, faSquareGooglePlus } from '@fortawesome/free-brands-svg-icons';
+
 function Contact() {
   return (
     <section id='contact' className="mb-[120px] dark:bg-gray-800 dark:text-gray-50 text-white" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300"

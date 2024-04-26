@@ -2,6 +2,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
 import me from '../assets/images/Photo.png'
+
 function AboutMe() {
   return (
    <div id='about' className='w-[85%] mx-auto my-[100px] z-20  '  data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300"
