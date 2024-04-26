@@ -1,7 +1,7 @@
 import web from '../assets/images/web.jfif'
 import redux from '../assets/images/redux.jfif'
 import python from '../assets/images/python.png'
-import cse from '../assets/images/cse.PNG'
+import cse from '../assets/images/cse.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
@@ -16,17 +16,17 @@ function Certification() {
           <span className="w-24 h-[1px] bg-gray-400"></span>
         </div>
         <div className="grid grid-cols-1 ms:grid-cols-2 md:grid-cols-4 gap-5 justify-center items-center">
-        <div className="1 hover:scale-110 transition-transform duration-500 cursor-pointer">
-            <img src={cse} alt=""/>
+        <div className="1 hover:scale-150 transition-transform duration-500 cursor-pointer ">
+            <img src={cse} alt="img"  style={{ height: '200px' }}  />
         </div>
-        <div className="1 hover:scale-110 transition-transform duration-500 cursor-pointer">
-            <img src={web} alt=""/>
+        <div className="1 hover:scale-150 transition-transform duration-500 cursor-pointer">
+            <img src={web} alt="img"  style={{ height: '200px' }} />
         </div>
-        <div className="1  hover:scale-110 transition-transform duration-500 cursor-pointer">
-            <img src={redux} alt=""/>
+        <div className="1  hover:scale-150 transition-transform duration-500 cursor-pointer">
+            <img src={redux} alt="img"  style={{ height: '200px' }} />
         </div>
-        <div className="1  hover:scale-110 transition-transform duration-500 cursor-pointer">
-            <img src={python} alt=""/>
+        <div className="1  hover:scale-150 transition-transform duration-500 cursor-pointer">
+            <img src={python} alt="img"  style={{ height: '200px' }} />
         </div>
   
     </div>

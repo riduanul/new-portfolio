@@ -35,7 +35,8 @@ function Project() {
   ];
 
   return (
-    <div className='w-full md:w-[85%] mx-auto'id='project'>
+    <div className='w-full md:w-[85%] mx-auto'id='project' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300"
+    data-aos-duration="700">
       <div className="heading text-white my-[80px]">
         {/* heading */}
         <div className="title flex items-center justify-center">
@@ -46,8 +47,7 @@ function Project() {
       </div>
 
       {projects.map((project, index) => (
-        <div data-aos={`${index%2 !== 0 ? 'fade-left' : 'fade-right'}`} data-aos-offset="300"
-        data-aos-duration="700" className= {`my-[80px] flex flex-col md:flex-row items-center justify-between gap-5 ${index % 2 != 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`} key={index}>
+        <div className= {`my-[80px] flex flex-col md:flex-row items-center justify-between gap-5 ${index % 2 != 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`} key={index}>
           <div className="flex flex-col p-4 text-white w-full md:w-[60%]">
             <h2 className="text-2xl font-bold mb-2">{project.name}</h2>
             <p className="mb-4 text-gray-400 text-justify">{project.description}</p>
@@ -63,7 +63,8 @@ function Project() {
             </div>
           </div>
 
-          <div className="overflow-hidden md:w-[50%] h-[300px] cursor-pointer">
+          <div data-aos={`${index%2 == 0 ? 'fade-left' : 'fade-right'}`} data-aos-offset="300"
+        data-aos-duration="700"  className="overflow-hidden md:w-[50%] h-[300px] cursor-pointer">
             <div className="hover:object-bottom">
               <img src={project.image} alt={project.name} className="hover:overflow-y-scroll" />
             </div>
