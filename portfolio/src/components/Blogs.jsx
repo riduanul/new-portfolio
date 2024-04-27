@@ -37,7 +37,7 @@ function Blogs() {
             <img src={fundamental} alt="" className=" w-full rounded-t-md h-72 sm:h-60 md:h-72 lg:h-80 dark:bg-gray-500" />
             <div className="flex flex-col justify-between p-6 space-y-8">
               <div className="space-y-2">
-                <h2 className="text-xl font-semibold tracking-wide">JS Fundamental</h2>
+                <h2 className="text-xl font-semibold tracking-wide">JS Fundamentals</h2>
               </div>
               <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"><a href="https://riduanul-haque1.medium.com/javascript-fundamental-5778718a6e4c" target='blank'>Read more</a></button>
             </div>
