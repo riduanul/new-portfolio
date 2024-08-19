@@ -2,12 +2,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinode } from '@fortawesome/free-brands-svg-icons';
 import ticketBooking from '../assets/images/ticketBooking.png';
 import doctor from '../assets/images/doctors.png';
-import hotel from '../assets/images/hotel.png';
+import nike from '../assets/images/nike.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
 function Project() {
   const projects = [
+    {
+      name: 'Doctors Portal',
+      description: 'A Doctor Appointment taking app where user can take an appointment by date and specialized doctor. doctor can approve/cancel the appointment admin can add/delete a doctor. manage appointments etc.',
+      technologies: ['react', 'redux', 'tailwind', 'Nodejs', 'ExpressJs', 'MongoDB'],
+      liveLink: 'https://doctors-portal-889.netlify.app/',
+      githubLink: 'https://github.com/riduanul/doctors-portal-new',
+      image: doctor
+    },
+    {
+      name: 'Nike E-Commerce App',
+      description: 'A Hotel Booking app user can book hotel by category. can see details, and can cancel booking admin can add/remove hotel and user.',
+      technologies: ['react', 'tailwind', 'node', 'express', 'mongodb'],
+      liveLink: 'https://nike-ecommerce-998.netlify.app/',
+      githubLink: 'https://github.com/riduanul/nike-ecommerce',
+      image: nike
+    },
     {
       name: 'Ticket Booking App',
       description: 'Key Features: Train Schedule Search by Destination: Users can search for train schedules based on their destination and also can filter train schedules by specifying the date and time of travel. Booking Ticket: Users can easily book train tickets after selecting the desired schedule. Make Comments: Users can add comments or notes while booking tickets for reference. User can cancel their ticket from user dashboard and can download tickets',
@@ -16,27 +32,13 @@ function Project() {
       githubLink: 'https://github.com/riduanul/ticket-booking-app',
       image: ticketBooking
     },
-    {
-      name: 'Hotel Booking App',
-      description: 'A Hotel Booking app user can book hotel by category. can see details, and can cancel booking admin can add/remove hotel and user.',
-      technologies: ['react', 'tailwind', 'Python', 'django', 'rest_framework'],
-      liveLink: 'https://github.com/riduanul/book-hotel-backend',
-      githubLink: 'https://github.com/riduanul/book-hotel-backend',
-      image: hotel
-    },
-    {
-      name: 'Doctors Portal',
-      description: 'A Doctor Appointment taking app where user can take an appointment by date and specialized doctor. doctor can approve/cancel the appointment admin can add/delete a doctor. manage appointments etc.',
-      technologies: ['react', 'redux', 'tailwind', 'Nodejs', 'ExpressJs', 'MongoDB'],
-      liveLink: 'https://github.com/riduanul/doctors-portal-new',
-      githubLink: 'https://github.com/riduanul/doctors-portal-new',
-      image: doctor
-    },
+   
+   
   ];
 
   return (
     <div className='w-full md:w-[85%] mx-auto'id='project' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="300"
-    data-aos-duration="700">
+    data-aos-duration="700" >
       <div className="heading text-white my-[80px]">
         {/* heading */}
         <div className="title flex items-center justify-center">
